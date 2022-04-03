@@ -1,6 +1,9 @@
-# Welcome to Remix!
+# Formula 1 Dashboard
+
+Simple Formula 1 Dashboard developed to explore [Remix](http://remix.run).
 
 - [Remix Docs](https://remix.run/docs)
+- [Ergast Developer API](https://ergast.com/mrd/)
 
 ## Deployment
 
