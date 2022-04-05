@@ -1,10 +1,10 @@
 import type { LinksFunction, MetaFunction } from '@remix-run/node';
 import { Outlet } from '@remix-run/react';
 
-import Document from './components/Document';
-import Layout from './components/Layout';
-import SideBar from './components/SideBar';
-import styles from './tailwind.css';
+import Document from '~/components/Document';
+import Layout from '~/components/layout/Layout';
+import SideBar from '~/components/layout/SideBar';
+import styles from '~/tailwind.css';
 
 export const links: LinksFunction = () => {
   return [{ rel: 'stylesheet', href: styles }];
