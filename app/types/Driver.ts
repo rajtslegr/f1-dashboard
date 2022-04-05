@@ -1,11 +1,11 @@
 interface Driver {
-  driverId: string,
+  driverId: string;
   permanentNumber: string;
-  code: string
+  code: string;
   url: string;
   givenName: string;
   familyName: string;
-  dateOfBirth: string
+  dateOfBirth: string;
   nationality: string;
 }
 
