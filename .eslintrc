@@ -36,13 +36,15 @@
       ],
       "plugins": [
         "@typescript-eslint",
-        "unused-imports"
+        "unused-imports",
+        "tailwindcss"
       ],
       "extends": [
         "airbnb-typescript",
         "@remix-run/eslint-config",
         "@remix-run/eslint-config/node",
-        "plugin:prettier/recommended"
+        "plugin:prettier/recommended",
+        "plugin:tailwindcss/recommended"
       ],
       "parserOptions": {
         "project": "./tsconfig.json"
@@ -81,6 +83,12 @@
               "order": "asc",
               "caseInsensitive": true
             }
+          }
+        ],
+        "tailwindcss/classnames-order": [
+          "warn",
+          {
+            "officialSorting": true
           }
         ],
         "@typescript-eslint/comma-dangle": "off",

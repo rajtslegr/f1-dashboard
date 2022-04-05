@@ -1,14 +1,14 @@
-import type { MetaFunction } from '@remix-run/node';
-import {
-  Links,
-  LiveReload,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
-} from '@remix-run/react';
+import type { LinksFunction, MetaFunction } from '@remix-run/node';
+import { Outlet } from '@remix-run/react';
 
-import NavigationBar from './components/NavigationBar';
+import Document from './components/Document';
+import Layout from './components/Layout';
+import SideBar from './components/SideBar';
+import styles from './tailwind.css';
+
+export const links: LinksFunction = () => {
+  return [{ rel: 'stylesheet', href: styles }];
+};
 
 export const meta: MetaFunction = () => ({
   charset: 'utf-8',
@@ -16,20 +16,13 @@ export const meta: MetaFunction = () => ({
   viewport: 'width=device-width,initial-scale=1',
 });
 
-export default function App() {
-  return (
-    <html lang="en">
-      <head>
-        <Meta />
-        <Links />
-      </head>
-      <body>
-        <NavigationBar />
-        <Outlet />
-        <ScrollRestoration />
-        <Scripts />
-        <LiveReload />
-      </body>
-    </html>
-  );
-}
+const App: React.FC = () => (
+  <Document>
+    <Layout>
+      <SideBar />
+      <Outlet />
+    </Layout>
+  </Document>
+);
+
+export default App;

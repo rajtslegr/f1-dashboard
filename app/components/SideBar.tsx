@@ -1,6 +1,6 @@
 import { Link } from '@remix-run/react';
 
-const NavigationBar = () => (
+const SideBar: React.FC = () => (
   <ul>
     <li>
       <Link to="races">Races</Link>
@@ -11,4 +11,4 @@ const NavigationBar = () => (
   </ul>
 );
 
-export default NavigationBar;
+export default SideBar;

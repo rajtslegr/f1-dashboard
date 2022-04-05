@@ -1,7 +1,7 @@
 import { LoaderFunction } from '@remix-run/node';
 import { useLoaderData } from '@remix-run/react';
 
-import config from '~/Config';
+import config from '~/constants/Config';
 import DriverStandingsInterface from '~/types/DriverStandings';
 
 export const loader: LoaderFunction = async () => {
