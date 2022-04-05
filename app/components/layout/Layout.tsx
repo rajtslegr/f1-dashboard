@@ -1,9 +1,10 @@
-import Header from './Header';
+import SideBar from './SideBar';
 
 const Layout: React.FC = ({ children }) => (
-  <div className="min-h-screen w-screen bg-slate-700 text-gray-50">
-    <Header />
-    <main className="flex flex-row space-x-4 p-4">{children}</main>
+  <div className="flex min-h-screen w-screen flex-row bg-black text-gray-100">
+    {/* <Header /> */}
+    <SideBar />
+    <main className="w-full p-4">{children}</main>
   </div>
 );
 

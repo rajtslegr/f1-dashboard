@@ -3,12 +3,9 @@ import { Outlet } from '@remix-run/react';
 
 import Document from '~/components/Document';
 import Layout from '~/components/layout/Layout';
-import SideBar from '~/components/layout/SideBar';
 import styles from '~/tailwind.css';
 
-export const links: LinksFunction = () => {
-  return [{ rel: 'stylesheet', href: styles }];
-};
+export const links: LinksFunction = () => [{ rel: 'stylesheet', href: styles }];
 
 export const meta: MetaFunction = () => ({
   charset: 'utf-8',
@@ -19,7 +16,6 @@ export const meta: MetaFunction = () => ({
 const App: React.FC = () => (
   <Document>
     <Layout>
-      <SideBar />
       <Outlet />
     </Layout>
   </Document>

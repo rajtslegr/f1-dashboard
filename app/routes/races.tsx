@@ -1,6 +1,7 @@
 import { LoaderFunction } from '@remix-run/node';
 import { useLoaderData } from '@remix-run/react';
 
+import RaceCard from '~/components/RaceCard';
 import config from '~/constants/Config';
 import RaceTable from '~/types/RaceTable';
 
@@ -16,16 +17,17 @@ const Races = () => {
   const races = useLoaderData<RaceTable>();
 
   return (
-    <div>
-      <div>
-        <h1>Races</h1>
-        <p>Season: {races.season}</p>
+    <div className="flex flex-col space-y-16">
+      <h1 className="text-5xl font-bold">Races</h1>
+      <div className="grid gap-4 lg:grid-cols-2">
         {races.Races.map((race) => (
-          <div key={`${race.season}-${race.round}`}>
-            <h2>{race.raceName}</h2>
-            <p>{race.date}</p>
-            <p>{race.Circuit.circuitName}</p>
-          </div>
+          <RaceCard
+            key={`${race.season}-${race.round}`}
+            name={race.raceName}
+            round={race.round}
+            date={race.date}
+            circuit={race.Circuit.circuitName}
+          />
         ))}
       </div>
     </div>
