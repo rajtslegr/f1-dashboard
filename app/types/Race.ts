@@ -1,12 +1,12 @@
-import Circuit from "./Circuit";
-import TimeStamp from "./TimeStamp";
+import Circuit from './Circuit';
+import TimeStamp from './TimeStamp';
 
-interface Race extends TimeStamp {
-  season: string,
-  round: string,
+interface Race {
+  season: string;
+  round: string;
   url: string;
   raceName: string;
-  Circuit: Circuit
+  Circuit: Circuit;
   date: string;
   time: string;
   FirstPractice: TimeStamp;
