@@ -1,0 +1,25 @@
+const countryIds: Record<string, string> = {
+  Australia: 'AU',
+  Austria: 'AT',
+  Azerbaijan: 'AZ',
+  Bahrain: 'BH',
+  Belgium: 'BE',
+  Brazil: 'BR',
+  Canada: 'CA',
+  France: 'FR',
+  Hungary: 'HU',
+  Italy: 'IT',
+  Japan: 'JP',
+  Mexico: 'MX',
+  Monaco: 'MC',
+  Netherlands: 'NL',
+  'Saudi Arabia': 'SA',
+  Singapore: 'SG',
+  Spain: 'ES',
+  UAE: 'AE',
+  UK: 'GB',
+  'United States': 'US',
+  USA: 'US',
+};
+
+export default countryIds;

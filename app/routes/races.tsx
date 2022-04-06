@@ -2,7 +2,7 @@ import { LoaderFunction } from '@remix-run/node';
 import { useLoaderData } from '@remix-run/react';
 
 import RaceCard from '~/components/RaceCard';
-import config from '~/constants/Config';
+import config from '~/config/Config';
 import RaceTable from '~/types/RaceTable';
 
 export const loader: LoaderFunction = async () => {
@@ -27,6 +27,7 @@ const Races = () => {
             round={race.round}
             date={race.date}
             circuit={race.Circuit.circuitName}
+            country={race.Circuit.Location.country}
           />
         ))}
       </div>

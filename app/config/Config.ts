@@ -6,6 +6,7 @@ const config = {
       driver: '/current/driverStandings.json',
     },
   },
+  flagsBaseUrl: 'https://countryflagsapi.com/png',
 };
 
 export default config;
