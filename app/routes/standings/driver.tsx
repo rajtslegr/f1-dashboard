@@ -1,8 +1,8 @@
-import { LoaderFunction } from '@remix-run/node';
+import type { LoaderFunction } from '@remix-run/node';
 import { useLoaderData } from '@remix-run/react';
 
 import config from '~/config/Config';
-import DriverStandingsInterface from '~/types/DriverStandings';
+import type DriverStandingsInterface from '~/types/DriverStandings';
 
 export const loader: LoaderFunction = async () => {
   const res = await fetch(

@@ -1,5 +1,5 @@
-import Constructor from './Constructor';
-import Driver from './Driver';
+import type Constructor from './Constructor';
+import type Driver from './Driver';
 
 interface DriverStandings {
   season: string;

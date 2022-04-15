@@ -1,9 +1,9 @@
-import { LoaderFunction } from '@remix-run/node';
+import type { LoaderFunction } from '@remix-run/node';
 import { useLoaderData } from '@remix-run/react';
 
 import RaceCard from '~/components/RaceCard';
 import config from '~/config/Config';
-import RaceTable from '~/types/RaceTable';
+import type RaceTable from '~/types/RaceTable';
 
 export const loader: LoaderFunction = async () => {
   const res = await fetch(`${config.baseUrl}${config.endpoints.races}`);

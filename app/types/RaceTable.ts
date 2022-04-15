@@ -1,4 +1,4 @@
-import Race from './Race';
+import type Race from './Race';
 
 interface RaceTable {
   season: string;

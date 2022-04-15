@@ -1,5 +1,5 @@
-import Circuit from './Circuit';
-import TimeStamp from './TimeStamp';
+import type Circuit from './Circuit';
+import type TimeStamp from './TimeStamp';
 
 interface Race {
   season: string;
