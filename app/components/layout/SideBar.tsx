@@ -6,6 +6,9 @@ const SideBar: React.FC = () => (
     <nav className="flex flex-col space-y-2 pt-20">
       <NavigationLink to="races">Races</NavigationLink>
       <NavigationLink to="standings/driver">Driver Standings</NavigationLink>
+      <NavigationLink to="standings/constructor">
+        Constructor Standings
+      </NavigationLink>
     </nav>
   </div>
 );

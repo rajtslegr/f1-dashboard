@@ -17,7 +17,7 @@ const Races = () => {
   const races = useLoaderData<RaceTable>();
 
   return (
-    <div className="flex flex-col space-y-16">
+    <div className="flex flex-col space-y-16 self-center xl:px-32">
       <h1 className="text-5xl font-bold">Races</h1>
       <div className="grid gap-4 lg:grid-cols-2">
         {races.Races.map((race) => (

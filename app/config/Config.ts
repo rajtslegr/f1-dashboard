@@ -4,6 +4,7 @@ const config = {
     races: '/current.json',
     standings: {
       driver: '/current/driverStandings.json',
+      constructor: '/current/constructorStandings.json',
     },
   },
   flagsBaseUrl: 'https://countryflagsapi.com/png',
