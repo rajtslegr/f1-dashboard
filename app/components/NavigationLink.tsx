@@ -15,9 +15,9 @@ const NavigationLink: React.FC<NavigationLinkProps> = ({ to, children }) => {
     <Link
       to={to}
       className={clsx(
-        'cursor-pointer rounded-xl p-3 duration-100 ease-in hover:scale-105',
+        'cursor-pointer rounded-xl p-3 font-bold duration-100 ease-in hover:scale-105',
         !match && 'text-gray-400',
-        match && 'bg-f1-red shadow-lg',
+        match && 'bg-f1-red text-white shadow-lg',
       )}
     >
       {children}
